@@ -1,0 +1,650 @@
+    int x;
+    x = 1312;
+    int y =  231;
+
+    float gpa = 21.12;
+    char gra = 'D';
+    char name[] = "ritwik";
+
+    printf("%d\n", x);
+    printf("Your age is %i\n", y);
+    printf("I'm %i years old\n", y);
+    printf("%f\n", gpa);
+    printf("%.2f\n", gpa);
+    printf("%c\n", gra);
+    printf("Your name is %s\n", name);
+    printf("I'm %d years old and my mane is %s", y, name);
+
+
+
+    int age;
+    char name[50];
+    printf("enter the age:");
+    scanf("%d", &age);
+    printf("your age is %d", age);
+
+    printf("enter the name:");
+    // scanf("%s", &name);
+    
+    fgets(name, 50, stdin);
+    name[strlen(name)-1] = '\0';
+    printf("your name is %s", name);
+
+    int x = 81;
+    float y = 3.14;
+
+    double A = sqrt(x);
+    double B = pow(x, x);
+    int C = round(y);
+    int D = ceil(y);
+    double E = floor(y);
+    double F = fabs(-100);
+    double G = log(81);
+    double H = sin(45);
+    double I = cos(45);
+    double J = tan(45);
+
+    printf("%f\n\n%f\n\n%d\n\n%d\n\n%f\n\n%f\n\n%f\n\n%f\n\n%f\n\n%f\n\n", A, B, C, D, E, F, G, H, I, J);
+
+
+    const float PI = 3.14;
+    float r;
+    double c;
+    double a;
+
+    printf("Write a program for calculate circumference of a circle\n\n");
+    //Calculate circumference of a circle
+    // c = 2*PI*r
+    printf("Enter the Radius\n");
+    scanf("%f", &r);
+    c = 2*PI*r;
+    printf("Formula is 2 x PI x Radius\nRADIUS = %.3f cm\nPI = %.2f\nCircumference = %f cm\n", r, PI, c);
+
+    //Calculate area of a circle
+    a = PI*pow(r, 2);
+    printf("AREA = %f cm sq.", a);
+
+
+    //calculate any sides of an right angle triangle.
+    // h**2 = p**2 + b**2
+
+    float h;
+    float b;
+    float p;
+    char x;
+    printf("Enter:\n\th for HYPOTENUSE\n\tb for BASE\n\tp for PERPENDICULAR\n");
+    scanf("%c", &x);
+    if (x == 'h')
+        {
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+        
+        printf("Enter the value of PERPENDICULAR = ");
+        scanf("%f", &p);
+        
+        printf("Enter the value of BASE = ");
+        scanf("%f", &b);
+
+        h = sqrt(pow(p, 2)+pow(b, 2));
+        printf("HYPOTENUSE = %f", h);
+        }
+    else if(x == 'b')
+        {
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+        
+        printf("Enter the value of PERPENDICULAR = ");
+        scanf("%f", &p);
+        
+        printf("Enter the value of HYPOTENUSE = ");
+        scanf("%f", &h);
+
+        b = sqrt(pow(h, 2)-pow(p, 2));
+        printf("BASE = %f", b);
+        }
+    else if (x == 'p')
+        {
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+        
+        printf("Enter the value of BASE = ");
+        scanf("%f", &b);
+        
+        printf("Enter the value of HYPOTENUSE = ");
+        scanf("%f", &h);
+
+        p = sqrt(pow(h, 2)-pow(b, 2));
+        printf("PERPENDICULAR = %f", p);
+        }
+        else{
+            printf("okAY");
+        }
+
+
+
+    float h;
+    float b;
+    float p;
+    char x;
+    printf("Enter:\n\th for HYPOTENUSE\n\tb for BASE\n\tp for PERPENDICULAR\n");
+    scanf("%c", &x);
+
+    switch (x)
+    {
+    case 'h':
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+        
+        printf("Enter the value of PERPENDICULAR = ");
+        scanf("%f", &p);
+        
+        printf("Enter the value of BASE = ");
+        scanf("%f", &b);
+
+        h = sqrt(pow(p, 2)+pow(b, 2));
+        printf("HYPOTENUSE = %f", h);
+        break;
+
+    case 'b':
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+        
+        printf("Enter the value of PERPENDICULAR = ");
+        scanf("%f", &p);
+        
+        printf("Enter the value of HYPOTENUSE = ");
+        scanf("%f", &h);
+
+        b = sqrt(pow(h, 2)-pow(p, 2));
+        printf("BASE = %f", b);
+        break;
+
+    case 'p':
+        printf("Calculating HYPOTENUSE of a Right Angle Triangle\n");
+            
+        printf("Enter the value of BASE = ");
+        scanf("%f", &b);
+        
+        printf("Enter the value of HYPOTENUSE = ");
+        scanf("%f", &h);
+
+        p = sqrt(pow(h, 2)-pow(b, 2));
+        printf("PERPENDICULAR = %f", p);
+        break;
+    
+    default:
+        break;
+    }
+
+
+    char unit;
+    float temp;
+    printf("IS the temperature in (F) or (C)?");
+    scanf("%c", &unit);
+    unit = toupper(unit);
+
+    if(unit == 'C'){
+        printf("\nEnter the temp. in Celsius: ");
+        scanf("%f", &temp);
+        temp = (temp * 9/5) + 32;
+        printf("\nThe temp. in Farenheit is: %.1f", temp);
+
+    } 
+    else if(unit == 'F'){
+        printf("\nEnter the temp. in Farenheit: ");
+        scanf("%f", &temp);
+        temp = ((temp-32)*5)/9;
+        printf("\nThe temp. in Celcius is: %.1f", temp);
+
+    }
+    else{
+        printf("Can't accept %c scale.\nPlease select either 'c' or 'f' ");
+
+
+    #include <stdbool.h>
+    }
+
+        bool a = true;
+    int b = 2;
+    if (b < 5 && a)
+    {
+        printf("correct");
+    }else{
+        printf("not correct");
+    }
+
+    void SayHello()
+{
+    printf("\nHello 1");
+    printf("\nHello 2");
+    printf("\nHello 3\n");
+}
+
+void SayHello(char name1[], char name2[])
+{
+    printf("\nHello %s", name1);
+    printf("\nHello %s", name2);
+}
+
+int main(){
+
+    printf("Hello World\n\n");
+
+    char n[] = "Ritwik";
+    char m[] = "Singh";
+
+    SayHello(n, m);
+    
+  
+    return 0;
+}
+
+//Function Prototype
+//function declearation, w/o a body, before main()
+//Ensure that calls to a function are made with the correct arguments
+
+//Notes:
+//Many C compilers don't check for parameter matching
+//Missing arguments will results in unexpected behavior
+//A function prototypes causes the compiler to flag an error if arguments are missing
+
+//Advantages
+//1. Easier to navigate a program w/ main() at the top
+//2. helps with debugging 
+//3. Commonly used in header files
+
+// strlwr(n);
+// strupr(n);
+// strcat(n, m);
+// strncat(n, m, 2);
+strcpy(n, m);
+// strncpy(n, m, 1);
+printf("\n%s", n);
+
+    //for loop
+    for (int i = 1; i<= 10; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    //while loop
+    char name[25];
+    printf("\nwhat's your name?\n");
+    fgets(name, 25, stdin);
+    // name = strupr(name);
+    name[strlen(name)-1] = '\0';
+
+    while (strlen(name) == 0)
+    {
+        printf("\nYou didn't enter your name");
+        printf("\nWhat's your name?\n");
+        fgets(name, 25, stdin);
+        name[strlen(name)-1] = '\0';
+    }
+    
+
+    printf("hello %s", name);
+
+    //do while loop
+    int num = 0;
+    int sum = 0;
+    do
+    {
+        /* code */
+        printf("enter a # above 0: ");
+        scanf("%d", &num);
+        if(num>0)
+        {
+            sum += num;
+        }
+    }while (num>0);
+
+    printf("sum: %d", sum);
+
+        //nested loop
+
+    int rows;
+    int cols;
+    char symb;
+
+    printf("Enter # of rows:");
+    scanf("%d", &rows);
+
+    // scanf("%c");
+
+    printf("Enter # of columns:");
+    scanf("%d", &cols);
+
+    scanf("%c");
+
+    printf("Enter a symbols to use:");
+    scanf("%c", &symb);
+
+    // scanf("%c");
+
+    
+    for(int i = 0; i<=rows; i++)
+    {
+        for(int j = 1; j<=cols; j++)
+        {
+            // printf("%d", j);
+            printf("%c", symb);
+        }
+        printf("\n");
+    }
+
+    //continue and break
+
+    for (int i=1;i<=20;i++)
+    {
+        if(i ==13)
+        {
+            break;
+        }
+        printf("%d\n", i);
+    }
+
+
+    //array
+
+    double prices[] = {5.0, 10.0, 15.0, 3.0};
+    double score[5];
+
+    score[0] = 88.2;
+    score[3] = 22.9;
+
+    printf("$%.2lf\n", prices[0]);
+    printf("%.2lf%%\n", score[2]);
+    // printf(sizeof(prices[0]));
+
+    for (int i = 0; i < sizeof(score)/sizeof(score[0]); i++)
+    {
+        score[2] = 99.9;
+        printf("%.2lf%%\n", score[i]);
+    }
+
+    //2D array
+
+    int num[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    int num2[3][3];
+
+    // num2[0][0] = 1;
+    // num2[0][1] = 2;
+    // num2[1][0] = 3;
+    // num2[1][1] = 4;
+    // num2[2][0] = 5;
+    // num2[2][1] = 6;
+    // num2[1][2] = 8;
+    // if (num2[i][j]<1 || num2[i][j]>9)
+
+
+    int rows = sizeof(num2)/sizeof(num2[0]);
+    int cols = sizeof(num2[0])/sizeof(num2[0][0]);
+    printf("Rows: %d\nColumns: %d\n", rows, cols);
+    for (int i = 0; i<cols;i++)
+    {
+        for (int j = 0; j<rows;j++)
+        {
+            num2[i][j]=(i==j)?num2[i][j] = 1:0;
+            printf("%d  ", num2[i][j]);
+        }
+        printf("\n");
+    }
+
+    //array of strings
+
+    char name[][10] = {"abc", "dfd", "sdsdsd", "fsds", "sdsdsd", "fsds"};
+
+    strcpy(name[5], "def");
+
+    for (int i = 0; i<sizeof(name)/sizeof(name[0]); i++)
+    {
+        printf("%i: %s\n", i, name[i]);
+    }
+
+
+    //swaping of variable
+
+    char x = 'x';
+    char y = 'y';
+    char temp;
+
+    // all the lengths should be equal
+    char xx[50] = "abc";
+    char yy[50] = "def";
+    char temp1[50];
+
+    temp = x;
+    x = y;
+    y = temp;
+
+    strcpy(temp1, xx);
+    strcpy(xx, yy);
+    strcpy(yy, temp1);
+
+
+    printf("x = %c\n", x);
+    printf("y = %c\n", y);
+
+    printf("xx = %s\n", xx);
+    printf("yy = %s\n", yy);
+
+
+// sorting function for array with numbers
+void sort(int array[], int size)
+{
+    for (int i = 0; i < size-1; i++)
+    {
+        for (int j = 0; j < size -1; j++) //size -i-1?
+        {
+            if(array[j] > array[j+1])
+            {
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+            }
+        }
+    }
+}
+
+void displayArray(int array[], int size)
+{
+    for(int i=0; i<size;i++)
+    {
+        printf("%d ", array[i]);
+    }
+}
+
+//sorting function for array with characters
+void sortChar(char array[], int size)
+{
+    for (int i = 0; i < size-1; i++)
+    {
+        for (int j = 0; j < size -i-1; j++) //size -i-1?
+        {
+            if(array[j] > array[j+1]) // >: descending order <: ascending order
+            {
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+            }
+        }
+    }
+}
+
+void displayArrayChar(char array[], int size)
+{
+    for(int i=0; i<size;i++)
+    {
+        printf("%c ", array[i]);
+    }
+}
+
+int main(){
+
+    printf("Hello World\n\n");
+
+    // sorting an array
+    int array[] = {9, 1, 5, 4, 2, 8, 3, 6, 7};
+    int size = sizeof(array)/sizeof(array[0]);
+
+    char array1[] = {'A', 'F', 'Z', 'Y', 'B', 'K', 'L'};
+    int size1 = sizeof(array1)/sizeof(array1[0]);
+
+    sort(array, size);
+    displayArray(array, size);
+    printf("\n");
+    sortChar(array1, size1);
+    displayArrayChar(array1, size1);
+
+    return 0;
+}
+
+struct Player
+{
+    /* data */
+    char name[12];
+    int score;
+};
+
+    //struct = collection of related members ("variables")
+        //    they can be of different data types
+        //    listed under one name in a block of memory
+        //    very similar to classes in other languages (but no methods)
+
+    struct Player player1;
+    struct Player player2;
+
+    strcpy(player1.name, "Ritwik");//dot (.) is member access operator
+    player1.score = 50;
+
+    strcpy(player2.name, "Singh");
+    player2.score = 100;
+
+    printf("%s\n", player1.name);
+    printf("%d\n", player1.score);
+
+    printf("%s\n", player2.name);
+    printf("%d\n", player2.score);
+
+
+
+// typedef char user[25];
+
+typedef struct
+{
+    /* data */
+    char name[25];
+    char password[15];
+    int id;
+}User;
+
+
+int main(){
+
+    printf("Hello World\n\n");
+
+    //typedef = reserved keywords that gives en existing datatypes a "nickname"
+
+    User user1 = {"Ritwik", "pass123", 2134};
+    User user2 = {"Singh", "pass1234", 987654};
+
+    printf("%s\n", user1.name);
+    printf("%s\n", user1.password);
+    printf("%d\n", user1.id);
+    printf("\n");
+    printf("%s\n", user2.name);
+    printf("%s\n", user2.password);
+    printf("%d\n", user2.id);
+
+
+    return 0;
+}
+
+
+    User user1 = {"Spongebob", 5.0, 6};
+    User user2 = {"Emma", 7.0, 10};
+    User user3 = {"Liam", 1.0, 11};
+    User user4 = {"Aiden", 6.0, 5};
+    User user5 = {"Jackson", 9.2, 4};
+    User user6 = {"Ava", 3.0, 43};
+    User user7 = {"Mia", 3.3, 21};
+
+    User Users[] = {user1, user2, user3, user4, user5, user6, user7};
+
+    // printf("Name%-12s\tGPA\tID\n");
+
+    for (int i=0; i < sizeof(Users)/sizeof(Users[0]); i++)
+    {
+        printf("%-12s\t", Users[i].name);
+        printf("%.2f\t", Users[i].gpa);
+        printf("%5i\n", Users[i].id);
+    }
+
+
+    // QueAnsOps que 
+
+    char questions[][100] = {"1. In which Italian city can you find the Colosseum?:",
+                        "2. In the TV show New Girl, which actress plays Jessica Day?:",
+                        "3. What is the largest canyon in the world?:",
+                        "4. How long is the border between the United States and Canada?:",
+                        "5. What is the largest active volcano in the world?:"};
+
+
+    char options[][100] = {"1. Venice", "2. Rome", "3. Naples", "4. Milan",
+                            "1. Zooey Deschanel", "2. Kaley Cuoco", "3. Jennifer Aniston", "4. Alyson Hannigan",
+                            "1. Verdon Gorge, France", "2. King’s Canyon, Australia", "3. Grand Canyon, USA", "4. Fjaorargljufur Canyon, Iceland",
+                            "1. 3,525 miles", "2. 4,525 miles", "3. 5,525 miles", "4. 6,525 miles",
+                            "1. Mount Etna", "2. Mount Vesuvius", "3. Mouna Loa", "4. Mount Batur"};
+
+
+    char answer[10] = {'2', '1', '3', '3', '1'};
+    int nunofque = sizeof(questions)/sizeof(questions[0]);
+
+    int guess;
+    int score;
+
+
+
+    printf("QUIZ GAME\n");
+    printf("=========\n");
+    printf("************************************************************************\n");
+    for (int i = 0; i < nunofque; i++)
+    {
+        printf("%s\n", questions[i]);
+        for (int j = (i*4); j < (i*4)+4; j++)
+        {
+            printf("%s\n", options[j]);
+        }
+
+        printf("Guess: ");
+        scanf("%c", &guess);
+        scanf("%c"); //clear \n from input buffer
+        printf("************************************************************************\n");
+
+
+    }
+
+    //creating/removing txt file 
+
+    // FILE *pf = fopen("text.txt", "w");
+    // fprintf(pf, "Ritwik Singh");
+    // fclose(pf);
+
+    (remove("text.txt") == 0) ? printf("File Deleted Sucessfully!!") : printf("File Not Deleted Sucessfully!!");
+
+
+    //open/reading .txt file
+    FILE *pf = fopen("text.txt", "r");
+    char buffer[255];
+
+    if (pf == NULL)
+    {
+        printf("Unable to open file!\n");
+    }
+    else
+    {
+        while(fgets(buffer, 255, pf) != NULL)
+        {
+            printf("%s", buffer);
+        }
+    }
+    
+    fclose(pf);
+    
+    
